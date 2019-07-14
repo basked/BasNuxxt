@@ -15,6 +15,8 @@
                   :show-title="true"
                   :width="300"
                   :height="250"
+                  :on-showing="onShowing"
+                  :on-hiding="onHiding"
                   class="popup"
                   title="Information"
         >
@@ -30,21 +32,26 @@
         components: {
             DxPopup
         },
-        props: {
-            propsPopupVisible: Boolean
-        },
+        props: {propsPopupVisible: Boolean},
         data() {
             return {
-                popupVisible:false
+                popupVisible: false
             }
         },
-
         watch: {
-            propsPopupVisible: function (newVal, oldVal) { // watch it
+            propsPopupVisible() {
+                this.popupVisible = this.propsPopupVisible;
+            },
 
-              console.log(  this.popupVisible);
-              console.log(newVal);
-              console.log( oldVal);
+        },
+        methods:{
+            onShowing(){
+                console.log('OnShow');
+                this.$emit('OnShow', this.popupVisible);
+            },
+            onHiding(){
+                console.log('OnHide');
+                this.$emit('OnHide', this.popupVisible);
             }
         }
     }

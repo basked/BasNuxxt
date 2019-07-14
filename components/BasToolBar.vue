@@ -42,75 +42,14 @@
                         onClick: (e) => {
                             this.isPopupVisible =true;
                             notify('Back button has been clicked!');
-                        }
-                    }
-                }, {
-                    location: 'before',
-                    widget: 'dxButton',
-                    locateInMenu: 'auto',
-                    options: {
-                        icon: 'refresh',
-                        onClick: () => {
-                            notify('Refresh button has been clicked!');
-                        }
-                    }
-                }, {
-                    location: 'center',
-                    locateInMenu: 'never',
-                    template: () => {
-                        return '<div class=\'toolbar-label\'><b>Tom\'s Club</b> Products</div>';
-                    }
-                }, {
-                    location: 'after',
-                    widget: 'dxSelectBox',
-                    locateInMenu: 'auto',
-                    options: {
-                        width: 140,
-                        items: productTypes,
-                        valueExpr: 'id',
-                        displayExpr: 'text',
-                        value: productTypes[0].id,
-                        onValueChanged: (args) => {
-                            if (args.value > 1) {
-                                this.productsStore.filter('type', '=', args.value);
-                            } else {
-                                this.productsStore.filter(null);
-                            }
-                            this.productsStore.load();
-                        }
-                    }
-                }, {
-                    location: 'after',
-                    widget: 'dxButton',
-                    locateInMenu: 'auto',
-                    options: {
-                        icon: 'plus',
-                        onClick: () => {
+                        },
 
-                            notify('Add button has been clicked!');
-                        }
-                    }
-                }, {
-                    locateInMenu: 'always',
-                    text: 'Save',
-                    onClick: () => {
-                        notify('Save option has been clicked!');
-                    }
-                }, {
-                    locateInMenu: 'always',
-                    text: 'Print',
-                    onClick: () => {
-                        notify('Print option has been clicked!');
-                    }
-                }, {
-                    locateInMenu: 'always',
-                    text: 'Settings',
-                    onClick: () => {
-                        notify('Settings option has been clicked!');
+
                     }
                 }]
             };
         },
+
         methods:{
 
         }
