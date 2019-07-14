@@ -1,0 +1,21 @@
+{
+  "name": "BasNuxxt",
+  "version": "1.0.0",
+  "description": "My superior Nuxt.js project",
+  "author": "basked",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "devextreme": "^19.1.4",
+    "devextreme-vue": "^19.1.4",
+    "nuxt": "^2.8.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
