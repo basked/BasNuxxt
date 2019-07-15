@@ -1,6 +1,6 @@
 <template>
     <div>
-        <bas-popup :propsPopupVisible.sync="isPopupVisible"></bas-popup>
+        <bas-popup :propsPopupVisible.sync="isPopupVisible" @hidePopup="hidePopup"></bas-popup>
         <dx-toolbar :items="items"/>
         <dx-list
                 id="products"
@@ -19,11 +19,11 @@
     import DataSource from 'devextreme/data/data_source';
     import notify from 'devextreme/ui/notify';
     import 'devextreme/ui/select_box';
-    import { productTypes, products } from '@/store/DevData/ToolBar.js';
+    import {productTypes, products} from '@/store/DevData/ToolBar.js';
     import BasPopup from '@/components/BasPopup'
 
     export default {
-        name:"BasToolBar",
+        name: "BasToolBar",
         components: {
             DxToolbar,
             DxList,
@@ -40,18 +40,19 @@
                         type: 'back',
                         text: 'Back',
                         onClick: (e) => {
-                            this.isPopupVisible =true;
-                            notify('Back button has been clicked!');
+                            this.isPopupVisible = true;
+                          //  notify('Back button has been clicked!');
                         },
-
-
                     }
                 }]
             };
         },
+        methods: {
+             // параметр может быть с любым именем, название функции любое, но совпадать @hidePopup="hidePopup"
+            hidePopup(isPopupVisible) {
 
-        methods:{
-
+                this.isPopupVisible = isPopupVisible
+            }
         }
     };
 </script>
