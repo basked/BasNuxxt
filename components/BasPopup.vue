@@ -1,6 +1,5 @@
 <template>
     <div id="popup">
-
         <dx-popup :visible.sync="popupVisible"
                   :drag-enabled="true"
                   :resize-enabled="true"
@@ -81,14 +80,14 @@
     ul {
         list-style-type: none;
         text-align: center;
-        background-color: gainsboro;
+        /*background-color: gainsboro;*/
     }
 
     ul li {
         display: inline-block;
         width: 100%;
-        color: gainsboro;
-        background-color:  darkseagreen;
+        /*color: gainsboro;*/
+        /*background-color:  darkseagreen;*/
         margin-bottom: 10px;
         font-size: small;
     }

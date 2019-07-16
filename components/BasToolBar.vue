@@ -1,16 +1,15 @@
 <template>
     <div>
         <bas-popup :propsPopupVisible.sync="isPopupVisible" @hidePopup="hidePopup"></bas-popup>
-        <dx-toolbar :items="items"/>
-        <dx-list
-                id="products"
-                :data-source="productsStore"
+        <dx-toolbar class="dx-toolbar" :items="items"/>
+        <dx-list class="dx-list"
+        :data-source="productsStore"
         />
     </div>
 </template>
 <script>
     import 'devextreme/dist/css/dx.common.css';
-    import 'devextreme/dist/css/dx.material.teal.light.compact.css';
+    import 'devextreme/dist/css/dx.material.orange.dark.css';
     import DxToolbar from 'devextreme-vue/toolbar';
     import DxList from 'devextreme-vue/list';
     import notify from 'devextreme/ui/notify';
@@ -58,8 +57,17 @@
     .toolbar-label > b {
         font-size: 16px;
     }
-
-    #products {
-        margin-top: 10px;
+    .dx-toolbar {
+        height: 8vh;
+        position: absolute;
+        top: 0;
+        bottom: 0;
     }
+    .dx-list {
+        height: 82vh;
+        position: absolute;
+        top: 8%;
+        bottom: 0;
+    }
+
 </style>
