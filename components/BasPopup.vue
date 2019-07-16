@@ -15,23 +15,22 @@
             <dx-scroll-view :height="240">
                 <ul>
                     <li>
-                        <bas-progress-bar :propsMaxValue="20"  :propsCurValue="10"  :propsItemId="1" :propsItemName="'Nu10'" />
+                        <bas-progress-bar :propsMaxValue="20" :propsCurValue="0" :propsItemId="1"
+                                          :propsItemName="'Process #1'"/>
                     </li>
-                    <!--<li>-->
-                        <!--<bas-progress-bar :propsMaxValue="70" :propsName='Val 20' :propsCurValue="20"/>-->
-                    <!--</li>-->
-                    <!--<li>-->
-                        <!--<bas-progress-bar :propsMaxValue="70" :propsName='Val 30' :propsCurValue="30"/>-->
-                    <!--</li>-->
-                    <!--<li>-->
-                        <!--<bas-progress-bar :propsMaxValue="70" :propsName='Val 40' :propsCurValue="40"/>-->
-                    <!--</li>-->
-                    <!--<li>-->
-                        <!--<bas-progress-bar :propsMaxValue="70" :propsName='Val 50' :propsCurValue="50"/>-->
-                    <!--</li>-->
-                    <!--<li>-->
-                        <!--<bas-progress-bar :propsMaxValue="70" :propsName='Val 60' :propsCurValue="60"/>-->
-                    <!--</li>-->
+                    <li>
+                        <bas-progress-bar :propsMaxValue="20" :propsCurValue="5" :propsItemId="5"
+                                          :propsItemName="'Process #2'"/>
+                    </li>
+                    <li>
+                        <bas-progress-bar :propsMaxValue="20" :propsCurValue="10" :propsItemId="3"
+                                          :propsItemName="'Process #3'"/>
+                    </li>
+                    <li>
+                        <bas-progress-bar :propsMaxValue="20" :propsCurValue="15" :propsItemId="4"
+                                          :propsItemName="'Process #4'"/>
+                    </li>
+
 
                 </ul>
             </dx-scroll-view>

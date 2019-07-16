@@ -10,13 +10,15 @@
             :on-initialized="init"
             :on-complete="complete"
 
-    />
+    >
+
+    </dx-progress-bar>
     </div>
 </template>
 
 <script>
     import {DxProgressBar} from 'devextreme-vue/progress-bar';
-
+    import {DxButton} from 'devextreme-vue/button';
 
     export default {
         name: "BasProgressBar",
