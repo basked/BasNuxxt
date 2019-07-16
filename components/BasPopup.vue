@@ -15,41 +15,24 @@
             <dx-scroll-view :height="240">
                 <ul>
                     <li>
-                        <bas-progress-bar :propsMaxValue="60"  :propsName="60" :propsCurValue="curValue"/>
+                        <bas-progress-bar :propsMaxValue="20"  :propsCurValue="10"  :propsItemId="1" :propsItemName="'Nu10'" />
                     </li>
-                    <li>
-                        <bas-progress-bar :propsMaxValue="30" :propsName="30" :propsCurValue="20"/>
-                    </li>
-                    <li>
-                        <bas-progress-bar :propsMaxValue="30" :propsName="30" :propsCurValue="10"/>
-                    </li>
-                    <li>
-                        <bas-progress-bar :propsMaxValue="40" :propsName="40" :propsCurValue="50"/>
-                    </li>
-                    <li>
-                        <bas-progress-bar :propsMaxValue="50" :propsName="50" :propsCurValue="10"/>
-                    </li>
-                    <li>
-                        <bas-progress-bar :propsMaxValue="30" :propsName="30" :propsCurValue="10"/>
-                    </li>
-                    <li>
-                        <bas-progress-bar :propsMaxValue="60" :propsName="60" :propsCurValue="16"/>
-                    </li>
-                    <li>
-                        <bas-progress-bar :propsMaxValue="30" :propsName="30" :propsCurValue="20"/>
-                    </li>
-                    <li>
-                        <bas-progress-bar :propsMaxValue="35" :propsName="35" :propsCurValue="20"/>
-                    </li>
-                    <li>
-                        <bas-progress-bar :propsMaxValue="45" :propsName="45" :propsCurValue="10"/>
-                    </li>
-                    <li>
-                        <bas-progress-bar :propsMaxValue="70" :propsName="70" :propsCurValue="50"/>
-                    </li>
-                    <li>
-                        <bas-progress-bar :propsMaxValue="80" :propsName="80" :propsCurValue="10"/>
-                    </li>
+                    <!--<li>-->
+                        <!--<bas-progress-bar :propsMaxValue="70" :propsName='Val 20' :propsCurValue="20"/>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<bas-progress-bar :propsMaxValue="70" :propsName='Val 30' :propsCurValue="30"/>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<bas-progress-bar :propsMaxValue="70" :propsName='Val 40' :propsCurValue="40"/>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<bas-progress-bar :propsMaxValue="70" :propsName='Val 50' :propsCurValue="50"/>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<bas-progress-bar :propsMaxValue="70" :propsName='Val 60' :propsCurValue="60"/>-->
+                    <!--</li>-->
+
                 </ul>
             </dx-scroll-view>
         </dx-popup>
@@ -84,6 +67,7 @@
         },
         methods: {
             onShowing() {
+
                 this.$emit('showPopup', this.popupVisible);
             },
             onHiding() {

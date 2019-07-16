@@ -1,6 +1,6 @@
 <template>
     <div id="BasProgressBar">
-    <p>{{curValue}} из {{maxValue}}</p>
+    <p>{{itemName}}[{{itemId}}]: {{curValue}} из {{maxValue}}</p>
     <dx-progress-bar
             id="progress-bar-status"
             :min="0"
@@ -24,14 +24,16 @@
             DxProgressBar
         },
         props: {
-            propsName:String,
             propsMaxValue: Number,
+            propsItemId: Number,
+            propsItemName: String,
             propsCurValue: Number
 
         },
         data() {
             return {
-                name: this.propsName,
+                itemId: this.propsItemId,
+                itemName: this.propsItemName,
                 maxValue: this.propsMaxValue,
                 curValue: this.propsCurValue
             }
@@ -42,7 +44,7 @@
                 this.intervalId = setInterval(() => this.timer(), 1000);
             },
             complete(){
-              console.log( 'Complete progress '+ this.name);
+               console.log( 'Complete progress '+ this.itemName+'['+this.itemId+']');
             },
             timer() {
                 if (this.curValue < this.maxValue) {
