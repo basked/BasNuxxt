@@ -9,7 +9,7 @@
 </template>
 <script>
     import 'devextreme/dist/css/dx.common.css';
-    import 'devextreme/dist/css/dx.material.orange.dark.css';
+    import 'devextreme/dist/css/dx.material.orange.light.css';
     import DxToolbar from 'devextreme-vue/toolbar';
     import DxList from 'devextreme-vue/list';
     import notify from 'devextreme/ui/notify';
