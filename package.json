@@ -16,6 +16,7 @@
     "nuxt": "^2.8.1"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.9.0",
     "nodemon": "^1.18.9"
   }
 }

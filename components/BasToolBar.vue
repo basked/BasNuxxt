@@ -11,17 +11,14 @@
 <script>
     import 'devextreme/dist/css/dx.common.css';
     import 'devextreme/dist/css/dx.material.teal.light.compact.css';
-
-
     import DxToolbar from 'devextreme-vue/toolbar';
     import DxList from 'devextreme-vue/list';
-
-    import DataSource from 'devextreme/data/data_source';
     import notify from 'devextreme/ui/notify';
     import 'devextreme/ui/select_box';
-    import {productTypes, products} from '@/store/DevData/ToolBar.js';
     import BasPopup from '@/components/BasPopup'
 
+    import DataSource from 'devextreme/data/data_source';
+    import {productTypes, products} from '@/store/DevData/ToolBar.js';
     export default {
         name: "BasToolBar",
         components: {

@@ -3,6 +3,7 @@
 
         <dx-popup :visible.sync="popupVisible"
                   :drag-enabled="true"
+                  :resize-enabled="true"
                   :close-on-outside-click="true"
                   :show-title="true"
                   :width="400"
@@ -19,7 +20,7 @@
                                           :propsItemName="'Process #1'"/>
                     </li>
                     <li>
-                        <bas-progress-bar :propsMaxValue="20" :propsCurValue="5" :propsItemId="5"
+                        <bas-progress-bar :propsMaxValue="20" :propsCurValue="5" :propsItemId="2"
                                           :propsItemName="'Process #2'"/>
                     </li>
                     <li>
@@ -87,7 +88,7 @@
         display: inline-block;
         width: 100%;
         color: gainsboro;
-        background-color: palegreen;
+        background-color:  darkseagreen;
         margin-bottom: 10px;
         font-size: small;
     }

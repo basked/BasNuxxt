@@ -1,37 +1,14 @@
 <template>
   <div class="bas-tool-bar">
     <bas-tool-bar></bas-tool-bar>
-    <!--<div>-->
-      <!--<logo />-->
-      <!--<h1 class="title">-->
-        <!--BasNuxxt-->
-      <!--</h1>-->
-      <!--<h2 class="subtitle">-->
-        <!--My superior Nuxt.js project-->
-      <!--</h2>-->
-      <!--<div class="links">-->
-        <!--<a-->
-          <!--href="https://nuxtjs.org/"-->
-          <!--target="_blank"-->
-          <!--class="button&#45;&#45;green"-->
-        <!--&gt;-->
-          <!--Documentation-->
-        <!--</a>-->
-        <!--<a-->
-          <!--href="https://github.com/nuxt/nuxt.js"-->
-          <!--target="_blank"-->
-          <!--class="button&#45;&#45;grey"-->
-        <!--&gt;-->
-          <!--GitHub-->
-        <!--</a>-->
-      <!--</div>-->
-    <!--</div>-->
   </div>
 </template>
 
 <script>
 import Logo from '~/components/Logo.vue'
 import BasToolBar from '~/components/BasToolBar.vue'
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import '@fortawesome/fontawesome-free/js/all.min';
 
 export default {
   components: {
@@ -46,8 +23,6 @@ export default {
 .bas-tool-bar {
   margin: 3%;
 }
-
-
 
 .container {
   margin: 0 auto;
