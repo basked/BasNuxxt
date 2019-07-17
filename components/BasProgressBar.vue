@@ -79,12 +79,9 @@
     }
     .content {
         display: flex;
-
     }
     .dx-field{
-
         margin-top: -14px;
         margin-left: 20px;
-
     }
 </style>
